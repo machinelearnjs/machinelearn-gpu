@@ -1,6 +1,6 @@
 {
   "name": "machinelearn-gpu",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "machinelearn.js extra module to enable tfjs-node-gpu backend",
   "main": "index.js",
   "repository": {
