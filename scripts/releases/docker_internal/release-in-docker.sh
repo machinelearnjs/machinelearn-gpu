@@ -66,7 +66,7 @@ cd /tmp/release
 
 echo "4. Cloning the machinelearn-node master branch."
 echo "You must have everything up-to-date on the master branch"
-git clone git@github.com:kalimdorjs/machinelearn-node.git .
+git clone git@github.com:kalimdorjs/machinelearn-gpu.git .
 
 echo "5. Setting git meta data"
 git config --global user.email "visualbbasic@gmail.com"
