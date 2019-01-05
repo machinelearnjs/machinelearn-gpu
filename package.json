@@ -1,0 +1,44 @@
+{
+  "name": "machinelearn-gpu",
+  "version": "0.0.2",
+  "description": "machinelearn.js extra module to enable tfjs-node-gpu backend",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kalimdorjs/machinelearn-gpu"
+  },
+  "scripts": {
+    "build": "npx tsc index.ts",
+    "test": "node ./scripts/test-integration.js",
+    "release:major": "./scripts/releases/release-it.sh -v major",
+    "release:minor": "./scripts/releases/release-it.sh -v minor",
+    "release:patch": "./scripts/releases/release-it.sh -v patch"
+  },
+  "engines": {
+    "node": ">=8.11.0"
+  },
+  "author": "Jason Shin",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs-node-gpu": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.11",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/test/.*\\.test.(ts|tsx|js)$",
+    "verbose": true,
+    "testEnvironment": "node"
+  }
+}
